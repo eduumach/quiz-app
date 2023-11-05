@@ -57,7 +57,23 @@ const Main = ({ startQuiz }) => {
 
     if (error) setError(null);
 
-    const API = `https://opentdb.com/api.php?amount=${numOfQuestions}&category=${category}&difficulty=${difficulty}&type=${questionsType}`;
+    let API = `http://127.0.0.1:8000/api/v1/quiz?`
+
+    if (category !== '0') {
+      API += `&category=${category}`
+    }
+
+    if (numOfQuestions !== '0') {
+        API += `&amount=${numOfQuestions}`
+    }
+
+    if (difficulty !== '0') {
+        API += `&difficulty=${difficulty}`
+    }
+
+    if (questionsType !== '0') {
+        API += `&type=${questionsType}`
+    }
 
     fetch(API)
       .then(respone => respone.json())
@@ -65,7 +81,7 @@ const Main = ({ startQuiz }) => {
         setTimeout(() => {
           const { response_code, results } = data;
 
-          if (response_code === 1) {
+          if (results.length === 0) {
             const message = (
               <p>
                 The API doesn't have enough questions for your query. (Ex.
