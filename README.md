@@ -26,7 +26,7 @@
 
 - [React](http://react.dev)
 - [Semantic UI](https://semantic-ui.com)
-- [Open Trivia Database API](https://opentdb.com/api_config.php)
+- [Quiz APP Backend](https://github.com/eduumach/quiz-app-backend)
 
 ## Development
 
@@ -36,6 +36,8 @@ To get a local copy of the code, clone it using git:
 git clone https://github.com/SafdarJamal/quiz-app.git
 cd quiz-app
 ```
+
+Use node version 16.0.0 or superior.
 
 Install dependencies:
 
