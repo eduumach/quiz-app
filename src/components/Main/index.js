@@ -57,7 +57,7 @@ const Main = ({ startQuiz }) => {
 
     if (error) setError(null);
 
-    let API = `http://127.0.0.1:8000/api/v1/quiz?`
+    let API = `http://127.0.0.1:8009/api/v1/quiz?`
 
     if (category !== '0') {
       API += `&category=${category}`
