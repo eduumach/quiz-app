@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  front:
+    container_name: quiz_front
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
