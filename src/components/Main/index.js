@@ -80,7 +80,9 @@ const Main = ({ startQuiz }) => {
       .then(data =>
         setTimeout(() => {
           const { response_code, results } = data;
-
+          if (response_code !== 0) {
+            console.log(data);
+          }
           if (results.length === 0) {
             const message = (
                 <p>
