@@ -83,15 +83,12 @@ const Main = ({ startQuiz }) => {
 
           if (results.length === 0) {
             const message = (
-              <p>
-                The API doesn't have enough questions for your query. (Ex.
-                Asking for 50 Questions in a Category that only has 20.)
-                <br />
-                <br />
-                Please change the <strong>No. of Questions</strong>,{' '}
-                <strong>Difficulty Level</strong>, or{' '}
-                <strong>Type of Questions</strong>.
-              </p>
+                <p>
+                  A API não possui perguntas suficientes para a sua consulta. (Por exemplo, solicitar 50 perguntas em uma categoria que possui apenas 20.)
+                  <br />
+                  <br />
+                  Por favor, altere o <strong>Número de Perguntas</strong>, <strong>Nível de Dificuldade</strong> ou <strong>Tipo de Perguntas</strong>.
+                </p>
             );
 
             setProcessing(false);
@@ -136,7 +133,7 @@ const Main = ({ startQuiz }) => {
             <Item.Image src={mindImg} />
             <Item.Content>
               <Item.Header>
-                <h1>The Ultimate Trivia Quiz</h1>
+                <h1>O Ultimate Quiz de Trívia</h1>
               </Item.Header>
               {error && (
                 <Message error onDismiss={() => setError(null)}>
@@ -151,8 +148,8 @@ const Main = ({ startQuiz }) => {
                   fluid
                   selection
                   name="category"
-                  placeholder="Select Quiz Category"
-                  header="Select Quiz Category"
+                  placeholder="Selecionar categoria do quiz"
+                  header="Selecionar categoria do quiz"
                   options={CATEGORIES}
                   value={category}
                   onChange={(e, { value }) => setCategory(value)}
@@ -164,8 +161,8 @@ const Main = ({ startQuiz }) => {
                   fluid
                   selection
                   name="numOfQ"
-                  placeholder="Select No. of Questions"
-                  header="Select No. of Questions"
+                  placeholder="Selecione o Número de Perguntas"
+                  header="Selecione o Número de Perguntas"
                   options={NUM_OF_QUESTIONS}
                   value={numOfQuestions}
                   onChange={(e, { value }) => setNumOfQuestions(value)}
@@ -177,8 +174,8 @@ const Main = ({ startQuiz }) => {
                   fluid
                   selection
                   name="difficulty"
-                  placeholder="Select Difficulty Level"
-                  header="Select Difficulty Level"
+                  placeholder="Selecione o Nível de Dificuldade"
+                  header="Selecione o Nível de Dificuldade"
                   options={DIFFICULTY}
                   value={difficulty}
                   onChange={(e, { value }) => setDifficulty(value)}
@@ -190,8 +187,8 @@ const Main = ({ startQuiz }) => {
                   fluid
                   selection
                   name="type"
-                  placeholder="Select Questions Type"
-                  header="Select Questions Type"
+                  placeholder="Selecione o Tipo de Perguntas"
+                  header="Selecione o Tipo de Perguntas"
                   options={QUESTIONS_TYPE}
                   value={questionsType}
                   onChange={(e, { value }) => setQuestionsType(value)}
@@ -203,8 +200,8 @@ const Main = ({ startQuiz }) => {
                   search
                   selection
                   name="hours"
-                  placeholder="Select Hours"
-                  header="Select Hours"
+                  placeholder="Selecionar Horas"
+                  header="Selecionar Horas"
                   options={COUNTDOWN_TIME.hours}
                   value={countdownTime.hours}
                   onChange={handleTimeChange}
@@ -214,8 +211,8 @@ const Main = ({ startQuiz }) => {
                   search
                   selection
                   name="minutes"
-                  placeholder="Select Minutes"
-                  header="Select Minutes"
+                  placeholder="Selecionar Minutos"
+                  header="Selecionar Minutos"
                   options={COUNTDOWN_TIME.minutes}
                   value={countdownTime.minutes}
                   onChange={handleTimeChange}
@@ -225,8 +222,8 @@ const Main = ({ startQuiz }) => {
                   search
                   selection
                   name="seconds"
-                  placeholder="Select Seconds"
-                  header="Select Seconds"
+                  placeholder="Selecionar Segundos"
+                  header="Selecionar Segundos"
                   options={COUNTDOWN_TIME.seconds}
                   value={countdownTime.seconds}
                   onChange={handleTimeChange}
@@ -240,7 +237,7 @@ const Main = ({ startQuiz }) => {
                   size="big"
                   icon="play"
                   labelPosition="left"
-                  content={processing ? 'Processing...' : 'Play Now'}
+                  content={processing ? 'Processando...' : 'Jogar agora'}
                   onClick={fetchData}
                   disabled={!allFieldsSelected || processing}
                 />

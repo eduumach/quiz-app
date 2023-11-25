@@ -3,7 +3,7 @@ const API = `http://127.0.0.1:8009/api/v1/category`;
 const CATEGORIES = [
   {
     key: '0',
-    text: 'Any Category',
+    text: 'Qualquer categoria',
     value: '0'
   }
 ];

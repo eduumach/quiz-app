@@ -3,7 +3,7 @@ const API = `http://127.0.0.1:8009/api/v1/difficulty`;
 const DIFFICULTY = [
     {
         key: '0',
-        text: 'Any Difficulty',
+        text: 'Qualquer dificuldade',
         value: '0'
     }
 ];

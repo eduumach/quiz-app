@@ -43,7 +43,7 @@ const Stats = ({
       <div style={{ marginTop: 35 }}>
         <Button
           primary
-          content="Play Again"
+          content="Jogar Novamente"
           onClick={replayQuiz}
           size="big"
           icon="redo"
@@ -52,7 +52,7 @@ const Stats = ({
         />
         <Button
           color="teal"
-          content="Back to Home"
+          content="Voltar para a Página Inicial"
           onClick={resetQuiz}
           size="big"
           icon="home"

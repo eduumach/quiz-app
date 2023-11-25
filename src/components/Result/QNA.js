@@ -7,11 +7,11 @@ const QNA = ({ questionsAndAnswers }) => {
     <Table celled striped selectable size="large">
       <Table.Header>
         <Table.Row>
-          <Table.HeaderCell>No.</Table.HeaderCell>
-          <Table.HeaderCell>Questions</Table.HeaderCell>
-          <Table.HeaderCell>Your Answers</Table.HeaderCell>
-          <Table.HeaderCell>Correct Answers</Table.HeaderCell>
-          <Table.HeaderCell>Points</Table.HeaderCell>
+            <Table.HeaderCell>Nº</Table.HeaderCell>
+            <Table.HeaderCell>Perguntas</Table.HeaderCell>
+            <Table.HeaderCell>Suas Respostas</Table.HeaderCell>
+            <Table.HeaderCell>Respostas Corretas</Table.HeaderCell>
+            <Table.HeaderCell>Pontos</Table.HeaderCell>
         </Table.Row>
       </Table.Header>
       <Table.Body>

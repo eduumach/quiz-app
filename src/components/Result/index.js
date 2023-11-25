@@ -23,7 +23,7 @@ const Result = ({
     <Container>
       <Menu fluid widths={2}>
         <Menu.Item
-          name="Stats"
+          name="Estatistica"
           active={activeTab === 'Stats'}
           onClick={handleTabClick}
         />

@@ -41,17 +41,17 @@ const Countdown = ({ countdownTime, timeOver, setTimeTaken }) => {
   return (
     <Button.Group size="massive" basic floated="right">
       <Popup
-        content="Hours"
+        content="Horas"
         trigger={<Button active>{hours}</Button>}
         position="bottom left"
       />
       <Popup
-        content="Minutes"
+        content="Minutos"
         trigger={<Button active>{minutes}</Button>}
         position="bottom left"
       />
       <Popup
-        content="Seconds"
+        content="Segundos"
         trigger={<Button active>{seconds}</Button>}
         position="bottom left"
       />

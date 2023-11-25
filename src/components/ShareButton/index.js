@@ -5,9 +5,9 @@ const ShareButton = () => {
   const handleClick = () => {
     navigator
       .share({
-        title: document.title,
-        text: 'Check out this quiz app — it rocks!',
-        url: 'https://safdarjamal.github.io/quiz-app/',
+          title: document.title,
+          text: 'Confira este aplicativo de quiz — é incrível!',
+          url: 'https://safdarjamal.github.io/quiz-app/'
       })
       .then(() => console.log('Successfully shared'))
       .catch(error => console.log(error.message));
@@ -17,7 +17,7 @@ const ShareButton = () => {
     <Fragment>
       {navigator.share ? (
         <Button
-          title="Share"
+          title="Compartilhar"
           floated="right"
           size="big"
           circular
@@ -30,7 +30,7 @@ const ShareButton = () => {
           size="tiny"
           trigger={
             <Button
-              title="Share"
+              title="Compartilhar"
               floated="right"
               size="big"
               circular
