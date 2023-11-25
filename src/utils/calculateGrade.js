@@ -37,15 +37,15 @@ const calculateGrade = score => {
   }
 
   if (score >= 90) {
-    remarks = "Outstanding! You've mastered this quiz. Well done!";
+    remarks = "Excepcional! Você dominou este quiz. Parabéns! Está chegando no nível Einstein!";
   } else if (score >= 80 && score <= 89) {
-    remarks = "Great job! You've excelled in this quiz.";
+    remarks = "Ótimo trabalho! Você se destacou neste quiz. Está se aproximando do nível Einstein!";
   } else if (score >= 70 && score <= 79) {
-    remarks = "Good effort! You've passed the quiz.";
+    remarks = "Bom esforço! Você passou no quiz. Continue assim!";
   } else if (score >= 60 && score <= 69) {
-    remarks = "You've passed, but there's potential for improvement.";
+    remarks = "Você passou, mas há potencial para melhorias. Continue buscando o nível Einstein!";
   } else if (score < 60) {
-    remarks = "Learning is a journey. Keep going, and you'll get there.";
+    remarks = "A aprendizagem é uma jornada. Continue, e você chegará lá. Lembre-se do nível Einstein!";
   }
 
   return {

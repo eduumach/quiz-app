@@ -21,9 +21,9 @@ const Header = () => {
     promptEvent.userChoice.then(result => {
       if (result.outcome === 'accepted') {
         setAppAccepted(true);
-        console.log('User accepted the A2HS prompt');
+        console.log('O usuário aceitou o prompt A2HS');
       } else {
-        console.log('User dismissed the A2HS prompt');
+        console.log('O usuário ignorou o prompt A2HS');
       }
     });
   };
@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <Menu stackable inverted>
       <Menu.Item header>
-        <h1>ADM Quiz</h1>
+        <h1>Quiz Einstein</h1>
       </Menu.Item>
       {promptEvent && !isAppInstalled && (
         <Menu.Item position="right">

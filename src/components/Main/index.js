@@ -135,7 +135,7 @@ const Main = ({ startQuiz }) => {
             <Item.Image src={mindImg} />
             <Item.Content>
               <Item.Header>
-                <h1>O Ultimate Quiz de Trívia</h1>
+                <h1>Quiz Einstein</h1>
               </Item.Header>
               {error && (
                 <Message error onDismiss={() => setError(null)}>
@@ -145,7 +145,7 @@ const Main = ({ startQuiz }) => {
               )}
               <Divider />
               <Item.Meta>
-                <p>In which category do you want to play the quiz?</p>
+                <p>Em qual categoria você deseja jogar o quiz?</p>
                 <Dropdown
                   fluid
                   selection
@@ -158,7 +158,7 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
-                <p>How many questions do you want in your quiz?</p>
+                <p>Quantas perguntas você deseja no seu quiz?</p>
                 <Dropdown
                   fluid
                   selection
@@ -171,7 +171,7 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
-                <p>How difficult do you want your quiz to be?</p>
+                <p>Quão difícil você deseja que seja o seu quiz?</p>
                 <Dropdown
                   fluid
                   selection
@@ -184,7 +184,7 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
-                <p>Which type of questions do you want in your quiz?</p>
+                <p>Que tipo de perguntas você deseja no seu quiz?</p>
                 <Dropdown
                   fluid
                   selection
@@ -197,7 +197,7 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
-                <p>Please select the countdown time for your quiz.</p>
+                <p>Por favor, selecione o tempo de contagem regressiva para o seu quiz.</p>
                 <Dropdown
                   search
                   selection

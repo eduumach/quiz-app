@@ -20,8 +20,8 @@ const App = () => {
   const startQuiz = (data, countdownTime) => {
     setLoading(true);
     setLoadingMessage({
-      title: 'Loading your quiz...',
-      message: "It won't be long!",
+      title: 'Carregando seu questionário...',
+      message: "Não vai demorar!"
     });
     setCountdownTime(countdownTime);
 
@@ -35,8 +35,8 @@ const App = () => {
   const endQuiz = resultData => {
     setLoading(true);
     setLoadingMessage({
-      title: 'Fetching your results...',
-      message: 'Just a moment!',
+      title: 'Buscando seus resultados...',
+      message: 'Apenas um momento!'
     });
 
     setTimeout(() => {
@@ -50,8 +50,8 @@ const App = () => {
   const replayQuiz = () => {
     setLoading(true);
     setLoadingMessage({
-      title: 'Getting ready for round two.',
-      message: "It won't take long!",
+      title: 'Preparando-se para a segunda rodada.',
+      message: 'Não vai demorar!'
     });
 
     const shuffledData = shuffle(data);
@@ -72,8 +72,8 @@ const App = () => {
   const resetQuiz = () => {
     setLoading(true);
     setLoadingMessage({
-      title: 'Loading the home screen.',
-      message: 'Thank you for playing!',
+      title: 'Carregando a tela inicial.',
+      message: 'Obrigado por jogar!'
     });
 
     setTimeout(() => {

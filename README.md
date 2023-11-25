@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://safdarjamal.github.io/quiz-app/">
-    QuizApp
+    Quiz Einstein
   </a>
 </h1>
 
@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  QuizApp is a free and open-source quiz application that lets you play fully customized quizzes right in the browser.
+  Quiz Einstein is a free and open-source quiz application that lets you play fully customized quizzes right in the browser.
 </p>
 
 ![QuizApp](https://github.com/SafdarJamal/quiz-app/assets/48409548/22e9696d-bab4-4aa5-a028-4a4f9ce71777)
