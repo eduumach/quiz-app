@@ -1,4 +1,4 @@
-const API = `http://127.0.0.1:8009/api/v1/type`;
+const API = `http://eduumach.ddns.net:8009/api/v1/type`;
 
 
 const QUESTIONS_TYPE = [
